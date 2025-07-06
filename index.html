@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nata criatividade</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+  <header class="cabecalho">
+
+    <div class="logo">Nata criatividade</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+    <nav class="menu" id="menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      
+  </header>
+
+  <!-- Banner com imagem responsiva usando srcset -->
+<section id="home" class="banner">
+    <picture>
+      <source srcset="pexels-artem-yellow-422929671-32795501.jpg" media="(min-width: 1024px)">
+      <source srcset="pexels-artem-yellow-422929671-32795501.jpg" media="(min-width: 600px)">
+      <img src="pexels-artem-yellow-422929671-32795501.jpg" alt="Banner Agência Criativa">
+    </picture>
+    <h1>Bem-vindo à Nata criatividade</h1>
+    <p>Transformamos ideias em experiências incríveis.</p>
+  </section>
+  
+  <!-- Serviços com imagens ilustrativas responsivas -->
+  <section id="servicos" class="servicos">
+    <h2>Serviços</h2>
+    <div class="grid-servicos">
+      <div class="servico">
+        <img srcset="pexels-divinetechygirl-1181467.jpg400w, pexels-divinetechygirl-1181467.jpg 800w" sizes="(max-width: 600px) 100vw, 400px" src="pexels-divinetechygirl-1181467.jpg" alt="Design Gráfico">
+        <h3>Design Gráfico</h3>
+      </div>
+      <div class="servico">
+        <img srcset="pexels-tranmautritam-326502.jpg 400w, pexels-tranmautritam-326502.jpg 800w" sizes="(max-width: 600px) 100vw, 400px" src="pexels-tranmautritam-326502.jpg" alt="Desenvolvimento Web">
+        <h3>Desenvolvimento Web</h3>
+      </div>
+      <div class="servico">
+        <img srcset="pexels-eva-bronzini-7661590.jpg 400w, pexels-eva-bronzini-7661590.jpg 800w" sizes="(max-width: 600px) 100vw, 400px" src="pexels-eva-bronzini-7661590.jpg" alt="Branding">
+        <h3>Branding</h3>
+      </div>
+      <div class="servico">
+        <img srcset="pexels-goumbik-590016.jpg 400w, pexels-goumbik-590016.jpg 800w" sizes="(max-width: 600px) 100vw, 400px" src="pexels-goumbik-590016.jpg" alt="Marketing Digital">
+        <h3>Marketing Digital</h3>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Formulário de contato completo -->
+  <section id="contato" class="contato">
+    <h2>Contato</h2>
+    <p>Endereço: minha casa, 223 - Poços de caldas</p>
+    <p>Telefone: (35) 99132-5450</p>
+    <p>Email: chrysbussines@gmail.com</p>
+    <form>
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  
+  </section>
+
+  <section id="depoimentos" class="depoimentos">
+    <h2>Depoimentos</h2>
+    <blockquote>"Excelente trabalho! Profissionais dedicados e criativos." - João Silva</blockquote>
+    <blockquote>"A agência entregou muito além do esperado. Recomendo!" - Maria Souza</blockquote>
+  </section>
+
+ 
+
+</body>
+</html>
