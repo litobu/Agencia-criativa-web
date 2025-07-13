@@ -1,0 +1,13 @@
+@mixin btn-padrao {
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  @mixin espacamento-secao {
+    padding: calc($espacamento * 2) 5vw;
+  }
+  

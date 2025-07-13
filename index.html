@@ -3,85 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nata criatividade</title>
+  <title>Nata Criatividade</title>
   <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
 
-  <header class="cabecalho">
+  <header class="header">
+    <div class="header__logo">Nata criatividade</div>
+    <div class="header__menu-toggle" id="menu-toggle">&#9776;</div>
 
-    <div class="logo">Nata criatividade</div>
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-
-    <nav class="menu" id="menu">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#sobre">Sobre Nós</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#depoimentos">Depoimentos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-      
+    <nav class="header__nav menu" id="menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="#sobre">Sobre Nós</a></li>
+        <li class="menu__item"><a class="menu__link" href="#servicos">Serviços</a></li>
+        <li class="menu__item"><a class="menu__link" href="#depoimentos">Depoimentos</a></li>
+        <li class="menu__item"><a class="menu__link" href="#contato">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Banner com imagem responsiva usando srcset -->
-<section id="home" class="banner">
-    <picture>
+  <section id="home" class="banner">
+    <picture class="banner__imagem">
       <source srcset="pexels-artem-yellow-422929671-32795501.jpg" media="(min-width: 1024px)">
       <source srcset="pexels-artem-yellow-422929671-32795501.jpg" media="(min-width: 600px)">
-      <img src="pexels-artem-yellow-422929671-32795501.jpg" alt="Banner Agência Criativa">
+      <img class="banner__img" src="pexels-artem-yellow-422929671-32795501.jpg" alt="Banner Agência Criativa">
     </picture>
-    <h1>Bem-vindo à Nata criatividade</h1>
-    <p>Transformamos ideias em experiências incríveis.</p>
+    <h1 class="banner__titulo">Bem-vindo à Nata criatividade</h1>
+    <p class="banner__descricao">Transformamos ideias em experiências incríveis.</p>
   </section>
-  
-  <!-- Serviços com imagens ilustrativas responsivas -->
+
   <section id="servicos" class="servicos">
-    <h2>Serviços</h2>
-    <div class="grid-servicos">
-      <div class="servico">
-        <img srcset="pexels-divinetechygirl-1181467.jpg400w, pexels-divinetechygirl-1181467.jpg 800w" sizes="(max-width: 600px) 100vw, 400px" src="pexels-divinetechygirl-1181467.jpg" alt="Design Gráfico">
-        <h3>Design Gráfico</h3>
+    <h2 class="servicos__titulo">Serviços</h2>
+    <div class="servicos__grid">
+      <div class="servicos__item">
+        <img class="servicos__imagem" srcset="pexels-divinetechygirl-1181467.jpg 400w, pexels-divinetechygirl-1181467.jpg 800w" sizes="(max-width: 600px) 100vw, 400px" src="pexels-divinetechygirl-1181467.jpg" alt="Design Gráfico">
+        <h3 class="servicos__nome">Design Gráfico</h3>
       </div>
-      <div class="servico">
-        <img srcset="pexels-tranmautritam-326502.jpg 400w, pexels-tranmautritam-326502.jpg 800w" sizes="(max-width: 600px) 100vw, 400px" src="pexels-tranmautritam-326502.jpg" alt="Desenvolvimento Web">
-        <h3>Desenvolvimento Web</h3>
+      <div class="servicos__item">
+        <img class="servicos__imagem" srcset="pexels-tranmautritam-326502.jpg 400w, pexels-tranmautritam-326502.jpg 800w" sizes="(max-width: 600px) 100vw, 400px" src="pexels-tranmautritam-326502.jpg" alt="Desenvolvimento Web">
+        <h3 class="servicos__nome">Desenvolvimento Web</h3>
       </div>
-      <div class="servico">
-        <img srcset="pexels-eva-bronzini-7661590.jpg 400w, pexels-eva-bronzini-7661590.jpg 800w" sizes="(max-width: 600px) 100vw, 400px" src="pexels-eva-bronzini-7661590.jpg" alt="Branding">
-        <h3>Branding</h3>
+      <div class="servicos__item">
+        <img class="servicos__imagem" srcset="pexels-eva-bronzini-7661590.jpg 400w, pexels-eva-bronzini-7661590.jpg 800w" sizes="(max-width: 600px) 100vw, 400px" src="pexels-eva-bronzini-7661590.jpg" alt="Branding">
+        <h3 class="servicos__nome">Branding</h3>
       </div>
-      <div class="servico">
-        <img srcset="pexels-goumbik-590016.jpg 400w, pexels-goumbik-590016.jpg 800w" sizes="(max-width: 600px) 100vw, 400px" src="pexels-goumbik-590016.jpg" alt="Marketing Digital">
-        <h3>Marketing Digital</h3>
+      <div class="servicos__item">
+        <img class="servicos__imagem" srcset="pexels-goumbik-590016.jpg 400w, pexels-goumbik-590016.jpg 800w" sizes="(max-width: 600px) 100vw, 400px" src="pexels-goumbik-590016.jpg" alt="Marketing Digital">
+        <h3 class="servicos__nome">Marketing Digital</h3>
       </div>
     </div>
   </section>
-  
-  <!-- Formulário de contato completo -->
+
   <section id="contato" class="contato">
-    <h2>Contato</h2>
-    <p>Endereço: minha casa, 223 - Poços de caldas</p>
-    <p>Telefone: (35) 99132-5450</p>
-    <p>Email: chrysbussines@gmail.com</p>
-    <form>
-      <input type="text" name="nome" placeholder="Seu nome" required>
-      <input type="email" name="email" placeholder="Seu e-mail" required>
-      <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
-      <button type="submit">Enviar</button>
+    <h2 class="contato__titulo">Contato</h2>
+    <p class="contato__info">Endereço: minha casa, 223 - Poços de caldas</p>
+    <p class="contato__info">Telefone: (35) 99132-5450</p>
+    <p class="contato__info">Email: chrysbussines@gmail.com</p>
+    <form class="contato__form">
+      <input class="contato__input" type="text" name="nome" placeholder="Seu nome" required>
+      <input class="contato__input" type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea class="contato__textarea" name="mensagem" placeholder="Sua mensagem" required></textarea>
+      <button class="contato__botao" type="submit">Enviar</button>
     </form>
-  </section>
-  
   </section>
 
   <section id="depoimentos" class="depoimentos">
-    <h2>Depoimentos</h2>
-    <blockquote>"Excelente trabalho! Profissionais dedicados e criativos." - João Silva</blockquote>
-    <blockquote>"A agência entregou muito além do esperado. Recomendo!" - Maria Souza</blockquote>
+    <h2 class="depoimentos__titulo">Depoimentos</h2>
+    <blockquote class="depoimentos__item">"Excelente trabalho! Profissionais dedicados e criativos." - João Silva</blockquote>
+    <blockquote class="depoimentos__item">"A agência entregou muito além do esperado. Recomendo!" - Maria Souza</blockquote>
   </section>
 
- 
+  
 
 </body>
 </html>
+

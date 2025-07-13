@@ -1,0 +1,14 @@
+section {
+    @include espacamento-secao;
+  }
+  
+  .sobre,
+  .depoimentos,
+  .contato {
+    background-color: $cor-secundaria;
+  }
+  
+  .servicos {
+    background-color: $cinza-claro;
+  }
+  
